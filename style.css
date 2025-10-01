@@ -1,0 +1,180 @@
+/* ====== GLOBAL ====== */
+html {
+  scroll-padding-top: 80px; /* sesuaikan tinggi navbar */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth; /* scroll halus */
+}
+
+/* ====== NAVBAR ====== */
+.navbar-brand img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.navbar .nav-link {
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--bs-primary);
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--bs-primary);
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar .nav-link.active {
+  color: var(--bs-primary);
+  font-weight: 600;
+}
+
+/* ====== BACKGROUND ====== */
+.bg-cream {
+  background: linear-gradient(135deg, #fff8f0 0%, #ffe9f3 100%);
+}
+
+/* ====== BUTTONS ====== */
+.btn-instagram {
+  background: radial-gradient(circle at 30% 107%,
+    #fdf497 0%, #fdf497 5%,
+    #fd5949 45%, #d6249f 60%,
+    #285AEB 90%);
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-instagram:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+.btn.rounded-circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.btn-shopee {
+  background-color: #ee4d2d;
+  color: #fff;
+}
+
+.btn-shopee:hover {
+  background-color: #d44126;
+  color: #fff;
+}
+
+/* ====== PRODUK CARD ====== */
+.produk-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produk-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ====== CAROUSEL ====== */
+.carousel-inner img {
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* ====== SECTION HEADINGS ====== */
+#about h2 {
+  margin-top: -20px; /* bisa diganti padding section */
+}
+
+#produk h2 {
+  margin-top: -25px;
+}
+.collage-box {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* ukuran kotak */
+.collage-box.standard {
+  height: 200px;
+}
+.collage-box.tall {
+  height: 420px;
+}
+
+/* efek hover */
+.collage-box:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+.bg-gallery {
+  background-color: #adb5bd;
+}
+.bg-Testimoni {
+  background-color: #e3f2fd !important;
+}
+/* Hover untuk navigasi */
+  .nav-footer:hover {
+    color: #00e5ff !important;
+    text-shadow: 0 0 8px #00e5ff, 0 0 15px #00e5ff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Hover untuk ikon sosial media */
+  .social-footer:hover {
+    color: #00e5ff !important;
+    text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff;
+    transition: all 0.3s ease-in-out;
+  }
+   .btn-wa {
+    background-color:#00e5ff; 
+    color:#2c2f48; 
+    font-weight:bold; 
+    transition: all 0.3s ease-in-out;
+    border-radius:8px;
+  }
+  .btn-wa:hover {
+    background-color:#00c4d6;
+    transform: scale(1.05);
+  }
+
+/* ====== MODAL IMAGE (RESPONSIVE) ====== */
+.modal-img {
+  max-height: 400px;
+  width: auto;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .modal-img {
+    max-height: 250px;
+  }
+}
+
+/* HP */
+@media (max-width: 576px) {
+  .modal-img {
+    max-height: 180px;
+  }
+}
+
